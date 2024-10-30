@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List by Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="groceries.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="mealfinder.html">Recipe</a>
+            <a href="mealview.html">Meal Planner</a>
+            <a href="#">Groceries</a>
+        </nav>
+    </header>
+
+    <h1>Grocery List</h1>
+
+    <div>
+        <label for="category-selection">Category:</label>
+        <select id="category-selection">
+            <option value="" disabled selected>Select a category</option>
+        </select>
+
+        <label for="meal-selection">Meal:</label>
+        <select id="meal-selection" disabled>
+            <option value="" disabled selected>Select a meal</option>
+        </select>
+        
+        <button id="add-grocery" disabled>Add Ingredients</button>
+    </div>
+
+    <table id="grocery-table">
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>Measure</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="grocery-list">
+            <!-- Grocery items will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script src="groceries.js"></script>
+</body>
+</html>

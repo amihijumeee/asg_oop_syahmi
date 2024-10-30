@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Meal For Your Ingredients</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel = "stylesheet" href = "mealfinder.css">
+</head>
+<body>
+  
+  <header>
+        <img class="logo" src="logo.png" alt="logo">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#">Recipe</a>
+            <a href="mealview.html">Meal Planner</a>
+            <a href="groceries.html">Groceries</a>
+        </nav>
+    </header>
+  
+  <div class = "container">
+    <div class = "meal-wrapper">
+      <div class = "meal-search">
+        <h2 class = "title">Find Meals For Your Ingredients</h2>
+        <blockquote>Food has been the bridge that connects me to people.<br>
+            Through food, you find love, friendship, peace, and respect for all human souls. It's a universal love<br>
+          <cite>- Chef Wan</cite>
+        </blockquote>
+
+          <div class = "meal-search-box">
+            <select class = "search-control" id = "category-input">
+              <option value="" disabled selected>Choose Category</option>
+              <option value="all">All Category</option>
+            </select>
+            <button type = "button" class = "search-btn btn" id = "category-btn">
+              <i class = "fas fa-search"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class = "meal-result">
+        <h2 class = "title">Your Search Results:</h2>
+        <div id= "meal">
+          <!-- meal item -->
+        </div>
+      </div>
+
+      <div class="meal-random">
+        <div id="random-meal">
+            <!-- random meal -->
+        </div>
+    </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <div class = "meal-details-content">
+          <!--"recipe-title"-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src = "mealfinder.js"></script>
+</body>
+</html>

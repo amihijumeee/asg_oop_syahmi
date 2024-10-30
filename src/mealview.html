@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mealview.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="logo.png" alt="logo">
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="mealfinder.html">Recipe</a>
+        <a href="#">Meal Planner</a>
+        <a href="groceries.html">Groceries</a>
+    </nav>
+</header>
+
+<div class="meals">
+  <h3>Saved Meals</h3>
+  <ul id="saved-meals-list"></ul>
+</div>
+   
+    <main>
+      <h3>Add Meal Planner</h3>
+        <section id="meal-planner">
+            <form id="meal-planner-form">
+                <label for="day">Select Day:</label>
+                <select id="day" required>
+                    <option value="" disabled selected>Select a day</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+
+                <label for="meal-time">Select Meal Time:</label>
+                <select id="meal-time" required>
+                    <option value="" disabled selected>Select a meal time</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                </select>
+
+                <label for="meal-selection">Select Meal:</label>
+                <select id="meal-selection" required>
+                    <option value="" disabled selected>Select a meal</option>
+                    <!-- Meals will be populated here -->
+                </select>
+
+                <button type="submit">Add to Meal Planner</button>
+            </form>
+        </section>
+
+        <section id="meal-planner-result">
+            <h3>Meal Planner</h3>
+            <table id="meal-planner-table">
+              <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Meal Time</th>
+                    <th>Meal Name</th>
+                    <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                      <!-- Display added meals with edit and delete options here -->
+              </tbody>
+            </table>
+      
+        </section>
+    </main>
+
+  
+    <script src="mealview.js"></script>
+</body>
+</html>
